@@ -11,7 +11,7 @@ type Person struct {
 }
 
 func Main999() {
-	person := Person{Name: "Alice", Age: 30}
+	person := Person{Name: "AliceGOLANG2", Age: 130}
 	jsonData, err := json.Marshal(person)
 	if err != nil {
 		fmt.Println("Error creating JSON:", err)
