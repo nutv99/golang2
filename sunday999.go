@@ -10,7 +10,7 @@ type Person struct {
 	Age  int    `json:"age"`
 }
 
-func main() {
+func Main999() {
 	person := Person{Name: "Alice", Age: 30}
 	jsonData, err := json.Marshal(person)
 	if err != nil {
