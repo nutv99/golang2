@@ -17,6 +17,7 @@ func Main999() {
 		fmt.Println("Error creating JSON:", err)
 		return
 	}
+	fmt.Println(" I am GOLANG 2 ")
 	fmt.Println(string(jsonData))
 }
 
