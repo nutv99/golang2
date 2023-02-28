@@ -12,6 +12,7 @@ var MainTableName string = "headOrder"
 var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
+var DSN string = ""
 
 func Mainnutv() {
 	jsonString := `{ 
