@@ -13,7 +13,7 @@ var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
 
-func mainnutv() {
+func Mainnutv() {
 	jsonString := `{ 
 		"name": "John",
 		"age": "30",
@@ -95,7 +95,7 @@ func searchArray(arr []string, elem string) bool {
 	return false
 }
 
-func process2() {
+func Process2() {
 
 	var dataSeries string = ""
 	// import strings
@@ -203,7 +203,7 @@ func process2() {
 
 }
 
-func process3() {
+func Process3() {
 
 	var dataSeries string = ""
 	// import strings
