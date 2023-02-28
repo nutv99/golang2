@@ -65,6 +65,9 @@ func Mainnutv() {
 		"email": "john@example.com"		
 	}`
 
+	if JSONString == "" {
+		JSONString = jsonString
+	}
 	var data interface{}
 	if err := json.Unmarshal([]byte(jsonString), &data); err != nil {
 		panic(err)
