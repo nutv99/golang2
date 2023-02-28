@@ -13,6 +13,7 @@ var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
 var DSN string = ""
+var JSONString string = ""
 
 func Mainnutv() {
 	jsonString := `{ 
