@@ -21,6 +21,17 @@ func Main999() {
 	fmt.Println(string(jsonData))
 }
 
+func Main1000() {
+	person := Person{Name: "AliceGOLANG1002", Age: 1130}
+	jsonData, err := json.Marshal(person)
+	if err != nil {
+		fmt.Println("Error creating JSON:", err)
+		return
+	}
+	fmt.Println(" I am GOLANG 2 ")
+	fmt.Println(string(jsonData))
+}
+
 /*
 echo "# golang2" >> README.md
 git init
