@@ -1,4 +1,4 @@
-package main
+package nutvjson
 
 import (
 	"encoding/json"
@@ -13,7 +13,7 @@ var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
 
-func main() {
+func mainnutv() {
 	jsonString := `{ 
 		"name": "John",
 		"age": "30",
