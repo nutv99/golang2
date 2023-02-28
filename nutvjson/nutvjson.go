@@ -8,14 +8,14 @@ import (
 
 var stAll string
 
+var AllQueryText string = ""
+
 var MainTableName string = "headOrder"
 var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
-var DSN string = ""
-var JSONString string = ""
 
-func Mainnutv() {
+func mainnutv() {
 	jsonString := `{ 
 		"name": "John",
 		"age": "30",
@@ -65,18 +65,18 @@ func Mainnutv() {
 		"email": "john@example.com"		
 	}`
 
-	if JSONString == "" {
-		JSONString = jsonString
-	}
 	var data interface{}
 	if err := json.Unmarshal([]byte(jsonString), &data); err != nil {
 		panic(err)
 	}
 
 	process(data, "")
-	Process2()
+	process2()
 	//fmt.Println("Final", stAll)
 	fmt.Println("QueryChildArray", QueryChildArray)
+	for i := 0; i <= len(QueryChildArray)-1; i++ {
+		AllQueryText += QueryChildArray[i] + " ; "
+	}
 
 }
 
@@ -100,7 +100,7 @@ func searchArray(arr []string, elem string) bool {
 	return false
 }
 
-func Process2() {
+func process2() {
 
 	var dataSeries string = ""
 	// import strings
@@ -208,7 +208,7 @@ func Process2() {
 
 }
 
-func Process3() {
+func process3() {
 
 	var dataSeries string = ""
 	// import strings

@@ -3,6 +3,7 @@ package sunday999
 import (
 	"encoding/json"
 	"fmt"
+
 )
 
 type Person struct {
@@ -12,17 +13,6 @@ type Person struct {
 
 func Main999() {
 	person := Person{Name: "AliceGOLANG2", Age: 130}
-	jsonData, err := json.Marshal(person)
-	if err != nil {
-		fmt.Println("Error creating JSON:", err)
-		return
-	}
-	fmt.Println(" I am GOLANG 2 ")
-	fmt.Println(string(jsonData))
-}
-
-func Main1000() {
-	person := Person{Name: "AliceGOLANG1002", Age: 1130}
 	jsonData, err := json.Marshal(person)
 	if err != nil {
 		fmt.Println("Error creating JSON:", err)
