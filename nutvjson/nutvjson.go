@@ -69,7 +69,7 @@ func Mainnutv() {
 	}
 
 	process(data, "")
-	process2()
+	Process2()
 	//fmt.Println("Final", stAll)
 	fmt.Println("QueryChildArray", QueryChildArray)
 
