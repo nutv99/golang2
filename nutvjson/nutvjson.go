@@ -18,7 +18,7 @@ var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
 
-func Mainnutv() {
+func Mainnutv() string{
 	jsonString := `{ 
 		"name": "John",
 		"age": "30",
@@ -81,6 +81,8 @@ func Mainnutv() {
 	for i := 0; i <= len(QueryChildArray)-1; i++ {
 		AllQueryText += QueryChildArray[i] + " ; "
 	}
+	
+	return AllQueryText 
 
 }
 
