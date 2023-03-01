@@ -9,6 +9,7 @@ import (
 var stAll string = ""
 
 var AllQueryText string = ""
+var DSN string = ""
 
 var JSONString string = ""
 
