@@ -74,9 +74,9 @@ func mainnutv() {
 	process2()
 	//fmt.Println("Final", stAll)
 	fmt.Println("QueryChildArray", QueryChildArray)
-	for i := 0; i <= len(QueryChildArray)-1; i++ {
-		AllQueryText += QueryChildArray[i] + " ; "
-	}
+	// for i := 0; i <= len(QueryChildArray)-1; i++ {
+	// 	AllQueryText += QueryChildArray[i] + " ; "
+	// }
 
 }
 
