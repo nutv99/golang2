@@ -6,16 +6,18 @@ import (
 	"strings"
 )
 
-var stAll string
+var stAll string = ""
 
 var AllQueryText string = ""
+
+var JSONString string = ""
 
 var MainTableName string = "headOrder"
 var sqlMain string = "INSERT INTO " + MainTableName + "("
 var ValueMain string = " VALUES("
 var QueryChildArray []string
 
-func mainnutv() {
+func Mainnutv() {
 	jsonString := `{ 
 		"name": "John",
 		"age": "30",
@@ -71,7 +73,7 @@ func mainnutv() {
 	}
 
 	process(data, "")
-	process2()
+	Process2()
 	//fmt.Println("Final", stAll)
 	fmt.Println("QueryChildArray", QueryChildArray)
 	// for i := 0; i <= len(QueryChildArray)-1; i++ {
@@ -100,7 +102,7 @@ func searchArray(arr []string, elem string) bool {
 	return false
 }
 
-func process2() {
+func Process2() {
 
 	var dataSeries string = ""
 	// import strings
